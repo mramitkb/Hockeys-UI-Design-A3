@@ -18,8 +18,8 @@
             font-family: "Manrope", sans-serif;
             box-sizing: border-box;
         }
-        .image{
-          background-image: url('./Images/2.png');
+        .img-overlay{
+          background: rgba(0,0,0,0.4);
         }
     </style>
 
@@ -120,7 +120,48 @@
             </div>
           </div>
         </div>
-        
+        <!-- Program Section -->
+        <div class="mt-24">
+          <hr class="border-dashed mb-8">
+          <h1 class="text-center mb-3 text-4xl font-extrabold">Program Sections</h1>
+          <p class="text-center w-[80%] mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti ad unde accusamus molestias exercitationem?</p>
+          <hr class="mt-8 mb-12 border-dashed">
+          <!--  Program Container -->
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+            <!-- One -->
+            <div class="relative w-full">
+              <img class="block w-[100%]" src="./Images/2.png" alt="">
+              <!-- Overlay -->
+              <div class="space-y-2 md:space-y-4 lg:space-y-4 w-full h-full absolute top-0 left-0 flex flex-col justify-center p-10 img-overlay rounded-xl">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white">Junior Program</h2>
+                <p class="text-white text-sm md:text-base">Developing young athletes through skill-building, teamwork, and mentorship in hockey.
+                </p>
+                <button class="btn btn-error w-fit bg-[#FF4240] text-white">Register Now!</button>
+              </div>
+            </div>
+            <!-- Two -->
+            <div class="relative w-full ">
+              <img class="block w-[100%]" src="./Images/3.png" alt="">
+              <!-- Overlay -->
+              <div class="space-y-2 md:space-y-4 lg:space-y-4 w-full h-full absolute top-0 left-0 flex flex-col justify-center p-10 img-overlay rounded-xl">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white">Teenager Program</h2>
+                <p class="text-white text-sm md:text-base">Developing young athletes through skill-building, teamwork, and mentorship in hockey.
+                  </p>
+                <button class="btn btn-error w-fit bg-[#FF4240] text-white">Register Now!</button>
+              </div>
+            </div>
+            <!-- Three -->
+            <div class="relative w-full md:col-span-2">
+              <img class="block w-full h-[250px] md:h-[300px] lg:h-[300px]" src="./Images/4.png" alt="">
+              <!-- Overlay -->
+              <div class="space-y-2 md:space-y-4 lg:space-y-4 w-full h-full absolute top-0 left-0 flex flex-col justify-center p-10 img-overlay rounded-xl">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white">Professional Program</h2>
+                <p class="text-white text-sm md:text-base  lg:w-[50%]">Elevating players' skills and careers through rigorous training and coaching.</p>
+                <button class="btn btn-error w-fit bg-[#FF4240] text-white">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </main>
     <footer class="bg-[#131318] py-24 px-5 md:p-5 lg:p-0">
       <!-- Container -->
@@ -179,34 +220,3 @@
     </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-<!-- Program Section -->
-<div>
-  <hr class="border-dashed mb-8">
-  <h1 class="text-center mb-3 text-4xl font-extrabold">Program Sections</h1>
-  <p class="text-center w-[80%] mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti ad unde accusamus molestias exercitationem?</p>
-  <hr class="mt-8 mb-12 border-dashed">
-  <!--  Program Container -->
-  <div>
-    <!-- One -->
-    <div class="image bg-no-repeat bg-content h-screen relative px-10 pt-24">
-      <!-- Overlay -->
-      <div class="absolute space-y-4 bg-[rgba(0, 0, 0, 0.4)]">
-        <h2 class="text-3xl font-extrabold text-white">Junior Program</h2>
-        <p class="w-1/2 text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-          enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-        <button class="btn btn-error bg-[#FF4240] text-white">Register Now!</button>
-      </div>
-    </div>
-  </div>
-</div>
