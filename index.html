@@ -42,7 +42,16 @@
         <div class="flex flex-row md:flex-row lg:flex-row justify-between items-center">
           <!-- Hamburger -->
             <div class="block md:hidden lg:hidden">
-                <img src="./Images/Hamburger.png" alt="">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="m-1"><img src="./Images/Hamburger.png" alt=""></div>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
+                  <li class="hover:text-[#FF4240] hover:font-bold"><a>Home</a></li>
+                  <li class="hover:text-[#FF4240] hover:font-bold"><a>About</a></li>
+                  <li class="hover:text-[#FF4240] hover:font-bold"><a>Pages</a></li>
+                  <li class="hover:text-[#FF4240] hover:font-bold"><a>Blog</a></li>
+                  <li class="hover:text-[#FF4240] hover:font-bold"><a>Contact</a></li>
+                </ul>
+              </div>
             </div>
             <!-- Title -->
             <div>
@@ -760,5 +769,3 @@
     </footer>
 </body>
 </html>
-
-
