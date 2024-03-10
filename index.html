@@ -77,23 +77,28 @@
             </div>
         </div>
         <!-- Banner Section -->
-        <div class="mt-12">
+        <div class="mt-12 md:relative lg:relative">
             <div class="carousel w-full">
                 
                 <div id="slide1" class="carousel-item relative w-full">
-                  <img src="./Images/1.png" class="w-full object-cover h-[550px] rounded-lg" />
+                  <img src="./Images/1.png" class="w-fit md:w-full lg:w-full object-cover rounded-lg" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 bottom-5 left-10 gap-10">
                     <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-0">❮</a> 
                     <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-0">❯</a>
                   </div>
                 </div> 
                 <div id="slide2" class="carousel-item relative w-full">
-                  <img src="./Images/2.png" class="w-full object-cover h-[550px] rounded-lg"/>
+                  <img src="./Images/2.png" class="w-fit md:w-full lg:w-full object-cover rounded-lg"/>
                   <div class="absolute flex justify-between transform -translate-y-1/2 bottom-5 left-10 gap-10">
                     <a href="#slide1" class="btn btn-circle bg-[#131318] text-white border-0">❮</a> 
                     <a href="#slide1" class="btn btn-circle bg-[#131318] text-white border-0">❯</a>
                   </div>
                 </div> 
+            </div>
+            <!-- Meet all The Heroes -->
+            <div class="bg-black rounded-xl border-none p-5 space-y-3 w-fit md:absolute lg:absolute right-8 bottom-6">
+              <h1 class="text-white font-extrabold text-2xl">Meet all the heroes from the field</h1>
+              <p class="text-[#b1b3b1]">The hockey hero's legacy echoes through the rinks, inspiring future champions.</p>
             </div>
         </div>
     </header>
@@ -551,7 +556,7 @@
           </div>
         </div>
         <!-- Get In Touch Section -->
-        <div class="mt-24">
+        <div class="mt-24 hidden">
           <hr class="border-dashed mb-8">
           <h1 class="text-center mb-3 text-2xl md:text-4xl font-extrabold">Our New Products</h1>
           <p class="text-center w-[80%] mx-auto">Introducing innovative solutions that redefine convenience and elevate user experiences. Embrace the future with our cutting-edge lineup of new products.</p>
@@ -559,7 +564,7 @@
           <!-- Container -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
             <!-- Contact -->
-            <div class="space-y-5 border h-fit p-5 rounded-xl">
+            <div class="space-y-5 border p-5 rounded-xl col-span-2 border-blue-700 border-4">
               <!-- One -->
               <div class="phone p-5 rounded-xl space-y-1">
                 <img class="mb-3" src="./Images/Phone.png" alt="">
@@ -581,37 +586,37 @@
             </div>
             <!-- Input Field -->
             <div class="">
-              <form action="" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+              <form action="" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 border-red-700 border-4 p-5 rounded-xl">
                 <!-- Name -->
-                <div class="space-y-4">
+                <div class="space-y-4 col-span-2">
                   <h3 class="font-bold text-xl">Your Name</h3>
-                  <input class="p-5 rounded-xl w-[324px] bg-[#F8F8F8] border-none outline-none focus:border-none" type="text" placeholder="Enter Your Name">
+                  <input class="p-5 rounded-xl w-full md:w-[324px] bg-[#F8F8F8] border-none outline-none focus:border-none" type="text" placeholder="Enter Your Name">
                 </div>
                 <!-- Email -->
-                <div class="space-y-4">
+                <div class="space-y-4 col-span-2">
                   <h3 class="font-bold text-xl">Your Email</h3>
-                  <input class="p-5 rounded-xl w-[324px] bg-[#F8F8F8] border-none outline-none focus:border-none" type="email" placeholder="Enter Your Email">
+                  <input class="p-5 rounded-xl w-full md:w-[324px] bg-[#F8F8F8] border-none outline-none focus:border-none" type="email" placeholder="Enter Your Email">
                 </div>
                 <!-- Subject -->
-                <div class="space-y-4">
+                <div class="space-y-4 col-span-2">
                   <h3 class="font-bold text-xl">Subject</h3>
-                  <input class="p-5 rounded-xl w-[324px] bg-[#F8F8F8] border-none outline-none focus:border-none" type="text" placeholder="Enter Your Subject">
+                  <input class="p-5 rounded-xl w-full md:w-[324px] bg-[#F8F8F8] border-none outline-none focus:border-none" type="text" placeholder="Enter Your Subject">
                 </div>
                 <!-- Phone -->
-                <div class="space-y-4">
+                <div class="space-y-4 col-span-2">
                   <h3 class="font-bold text-xl">Phone Number</h3>
-                  <input class="p-5 rounded-xl w-[324px] bg-[#F8F8F8] border-none outline-none focus:border-none" type="text" placeholder="Enter Your Phone Number">
+                  <input class="p-5 rounded-xl w-full md:w-[324px] bg-[#F8F8F8] border-none outline-none focus:border-none" type="text" placeholder="Enter Your Phone Number">
                 </div>
                 <!-- Message Input -->
-                <div class="space-y-4">
+                <div class="space-y-4 col-span-2">
                   <h3 class="font-bold text-xl">Message</h3>
-                  <textarea name="text" id="" cols="30" rows="10" placeholder="Write your message" class="border rounded-xl p-3 lg:w-[672px] resize-none col-span-2"></textarea>
+                  <textarea name="text" id="" cols="30" rows="10" placeholder="Write your message" class="border rounded-xl p-3 lg:w-[500px] resize-none w-fit"></textarea>
                 </div>
-                <button class="btn btn-error bg-[#FF4240] font-bold text-xl text-white w-full md:w-full lg:w-[672px] col-span-2">Send Message</button>
+                <button class="btn btn-error bg-[#FF4240] font-bold text-base md:text-xl text-white w-fit md:w-full lg:w-[672px] md:col-span-2">Send Message</button>
               </form>
             </div>
             <!-- Social Media -->
-            <div class="social py-9 text-center space-y-3 mt-12 rounded-xl col-span-2">
+            <div class="social py-9 text-center space-y-3 mt-12 rounded-xl col-span-2 border-green-700 border-4">
               <h2 class="font-extrabold text-2xl">Social Media</h2>
               <!-- Social Link -->
               <div class="space-x-3">
@@ -681,3 +686,5 @@
     </footer>
 </body>
 </html>
+
+
